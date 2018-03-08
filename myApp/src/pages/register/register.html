@@ -1,0 +1,37 @@
+<ion-content class="background">
+
+    <ion-navbar>
+      <ion-title>Create Account</ion-title>
+    </ion-navbar>
+    
+    <ion-content padding>
+    
+      <ion-list>
+    
+        <ion-item>
+          <ion-label floating>Username</ion-label>
+          <ion-input type="text" #usernameReg></ion-input> 
+        </ion-item>
+
+        <ion-item>
+          <ion-label floating>Email</ion-label>
+          <ion-input type="text" #emailReg></ion-input> 
+        </ion-item>
+    
+        <ion-item>
+          <ion-label floating>Password</ion-label>
+          <ion-input type="password" #passwordReg></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label floating>Confirm Password</ion-label>
+          <ion-input type="password" #confPasswordReg></ion-input>
+        </ion-item>
+    
+      </ion-list>
+        <div padding>
+          <button block ion-button (click)="registerUser()">Create Account</button>
+        </div>
+    
+    </ion-content>
+  </ion-content>
